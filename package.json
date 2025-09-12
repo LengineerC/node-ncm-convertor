@@ -1,0 +1,22 @@
+{
+  "name": "ncmdump",
+  "version": "1.0.0",
+  "description": "A TypeScript library to decrypt NCM (NetEase Cloud Music) encrypted files",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
