@@ -1,22 +1,30 @@
 {
-  "name": "ncmdump",
+  "name": "@lengineerc/ncm-convertor",
   "version": "1.0.0",
-  "description": "A TypeScript library to decrypt NCM (NetEase Cloud Music) encrypted files",
+  "author": "LengineerC",
+  "description": "Convert ncm to mp3 or flac",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
     "dist/**/*"
   ],
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "test": "tsx __test__/index.test.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["node", "music", "tool", "ncm"],
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "license": "ISC",
-  "description": "",
   "devDependencies": {
+    "@types/crypto-js": "^4.2.2",
     "@types/node": "^24.3.1",
     "tsx": "^4.20.5",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0",
+    "node-id3": "^0.2.9"
   }
 }
