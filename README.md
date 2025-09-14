@@ -4,7 +4,7 @@
 一个把网易云ncm文件解密为mp3、flac的npm包
 > **只能在node环境中使用，浏览器中无效**
 
-### 安装（暂未上传至npm）
+### 安装
 ```shell
 npm i install @lengineerc/ncm-convertor
 ```
