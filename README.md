@@ -6,17 +6,22 @@
 
 ### 安装（暂未上传至npm）
 ```shell
-npm install @lengineerc/ncm-convertor
+npm i install @lengineerc/ncm-convertor
 ```
 
 ### 使用
 ```ts
-import NcmConvertor from '@lengineerc/ncm-convertor';
+import { NcmConvertor } from '@lengineerc/ncm-convertor'; // ESM
+const { NcmConvertor } from '@lengineerc/ncm-convertor'; //CJS
 
-const convertor = new NcmConvertor(ncmFilePath, outputPath);
+const convertor = new NcmConvertor(ncmPath, outputPath);
 convertor.dump();
 ```
-极简api设计，只需调用`dump()`方法即可自动处理转换
+极简api设计，只需调用`NcmConvertor.dump`方法即可自动处理转换
+
+`NcmConvertor`构造函数传入两个参数:
+- `ncmPath`: 待解密的ncm文件路径
+- `outputPath`: 文件输出路径
 
 ### **注意事项：**
-`.flac`格式的音频元信息会丢失（没找到比较好的flac metadata写入方式，~~懒得做跨语言调用~~），`.mp3`不受影响
+- `.flac`格式的音频元信息会丢失（没找到比较好的flac metadata写入方式，~~懒得做跨语言调用~~），作为替代方案，会把图片和音频输出到同一目录下。`.mp3`不受影响
