@@ -12,7 +12,7 @@ npm i install @lengineerc/ncm-convertor
 ### 使用
 ```ts
 import { NcmConvertor } from '@lengineerc/ncm-convertor'; // ESM
-const { NcmConvertor } from '@lengineerc/ncm-convertor'; //CJS
+const { NcmConvertor } = require('@lengineerc/ncm-convertor'); //CJS
 
 const convertor = new NcmConvertor(ncmPath, outputPath);
 convertor.dump();
